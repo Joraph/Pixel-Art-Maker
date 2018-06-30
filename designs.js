@@ -18,12 +18,13 @@ function makeGrid(rows, coloumns) {
 // // Your code goes here!
       // var i=1
       // // while (<= rows;)
-  for (var i=1; i <= rows; i++){
+      var i =1
+  while (i <= rows){
     $('#pixelCanvas').append('<tr id = table' + i + '></tr>');
       for (var j=1; j <= coloumns; j++ ){
           $('#table' +i).append('<td></td>');
       }
-      i=i+1;  
+      i++ 
   }
 
   // make the color appears in cell
